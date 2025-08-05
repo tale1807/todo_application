@@ -7,8 +7,9 @@ import java.sql.Timestamp;
 @Data
 public class TaskCreateEditDTO {
 
-    Long userID;
+    Long userId;
     String title;
     String description;
     Timestamp dueDate;
+
 }

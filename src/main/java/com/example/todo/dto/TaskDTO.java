@@ -2,7 +2,6 @@ package com.example.todo.dto;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.Value;
 
 import java.sql.Timestamp;
 
@@ -11,11 +10,12 @@ import java.sql.Timestamp;
 public class TaskDTO {
 
     Long id;
-    Long userID;
+    Long userId;
     String title;
     String description;
     Timestamp createdAt;
     Timestamp updatedAt;
     Timestamp dueDate;
     Boolean completed;
+
 }

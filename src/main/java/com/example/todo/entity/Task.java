@@ -15,7 +15,7 @@ public class Task {
     private Long id;
 
     @Column(name = "user_id", nullable = false)
-    private Long userID;
+    private Long userId;
 
     @Column
     private String title;
@@ -35,6 +35,7 @@ public class Task {
 
     @Column(nullable = false)
     private Boolean completed;
+
 
 }
 
