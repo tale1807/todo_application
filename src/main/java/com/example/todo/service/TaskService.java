@@ -16,18 +16,18 @@ import java.util.List;
 
 
 @Service
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class TaskService {
 
     private final TaskRepository taskRepository;
     private final TaskCreateEditMapper taskCreateEditMapper;
     private final TaskReadMapper taskReadMapper;
 
-    public TaskService(TaskRepository taskRepository, TaskCreateEditMapper taskCreateEditMapper, TaskReadMapper taskReadMapper) {
-        this.taskRepository = taskRepository;
-        this.taskCreateEditMapper = taskCreateEditMapper;
-        this.taskReadMapper = taskReadMapper;
-    }
+//    public TaskService(TaskRepository taskRepository, TaskCreateEditMapper taskCreateEditMapper, TaskReadMapper taskReadMapper) {
+//        this.taskRepository = taskRepository;
+//        this.taskCreateEditMapper = taskCreateEditMapper;
+//        this.taskReadMapper = taskReadMapper;
+//    }
 
     public List<TaskDTO> findByUserId(Long userId) {
         return taskRepository.findAllByUserID(userId)
